@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and Global Styles */
+* {
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+}
+
+.content > div {
+    display: none;
+}
+
+.active {
+    display: block!important;
+}
+
+.sidebar {
+    padding: 20px;
+}
+.sidebar a {
+    display: block;
+    padding: 15px 10px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;        
+    border-bottom: 1px solid #ddd;    
+    transition: all 0.3s ease;
+}
+
+.sidebar a > svg{
+    color:#e91e6252;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    border-radius: 5px;
+    transform: translateX(5px);
+}
+
+.sidebar a:hover > svg, .sidebar a:active > svg {
+    color: #e91e62b3;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    padding-left:40px;
+}
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.orders-table th, .orders-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.orders-table th {
+    background-color: #f0f0f0;
+}
+
+.delivery-address, .billing-address{
+    border:solid 1px #ccc;
+    border-radius: 10px;
+}
+
+.updateUser > input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius:var(--bs-border-radius)!important;
+    background-color: #e91e621f;
+}
+
+.updateUser > input::placeholder {
+    color: gray;
+}
+
+.actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+#username-error, #email-error, #phone-error, #password-error, #confirm-password-error{
+    color:#e91e63;
+}
+
+.btn-primary{
+    background-color: #e91e63;
+    border: none;
+    margin-top: 0px;
+}
+
+.btn-primary:hover{
+    background-color: #000;
+}
+
+.eye-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and Global Styles */
+* {
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+}
+
+.delivery-policy > p, li{
+    margin-bottom:1rem!important;
+    color:gray;
+}
+
+
+
+.btn-primary{
+    background-color: #e91e63;
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #000;
+}
